@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Playfair Display", serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  
+  --color-gold: #D4AF37;
+  --color-silver: #C0C0C0;
+  --color-copper: #B87333;
+}
+
+body {
+  @apply bg-[#030303] text-white antialiased overflow-x-hidden;
+}
+
+.glass-card {
+  @apply bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}
+
+.silver-gradient {
+  background: linear-gradient(135deg, #707070, #e7e7e7, #707070, #e7e7e7, #707070);
+}
+
+.copper-gradient {
+  background: linear-gradient(135deg, #804A00, #B87333, #FFD39B, #B87333, #804A00);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.95); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s infinite ease-in-out;
+}
+
+.mesh-gradient {
+  background-color: #030303;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(192, 192, 192, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(184, 115, 51, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(212, 175, 55, 0.05) 0px, transparent 50%);
+}
+
