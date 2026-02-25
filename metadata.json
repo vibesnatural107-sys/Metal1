@@ -1,0 +1,5 @@
+{
+  "name": "MetalLive - Real-time Gold, Silver & Copper Rates",
+  "description": "A premium dashboard for live tracking of Gold (24k, 22k, 18k), Silver, and Copper prices with weight-based breakdowns.",
+  "requestFramePermissions": []
+}
